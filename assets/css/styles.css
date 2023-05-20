@@ -112,13 +112,13 @@ img {
 .section__tittle {
   font-size: var(--h1-font-size);
 }
-.section__subtitule {
+.section__subtitle {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: var(--mb-3);
 }
-.section__tittle,
-.section__subtitule {
+.section__title,
+.section__subtitle {
   text-align: center;
 }
 
@@ -338,3 +338,53 @@ img {
 }
 
 /* about */
+.about__img {
+  width: 200px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__description {
+  text-align: center;
+  margin-bottom: var(--mb-2-5);
+}
+
+/* .about__info {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2-5);
+} */
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: var(--mb-2-5);
+}
+.about__info--title {
+  order: -1;
+  margin-bottom: 0.5rem;
+}
+
+.about__info-title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+
+.about__info-name {
+  font-size: var(--smaller-font-size);
+}
+
+.about__info-title,
+.about__info-name {
+  display: block;
+  text-align: center;
+}
+
+.about__buttons {
+  display: flex;
+  justify-content: center;
+}
