@@ -690,3 +690,7 @@ img {
 }
 
 /* active-modal */
+.active-modal {
+  opacity: 1;
+  visibility: visible; 
+}
