@@ -47,9 +47,28 @@ skillsHeader.forEach((el) => {
   el.addEventListener('click', toggleSkills);
 });
 
+/*qualification.tabs*/
+function showSection(sectionId) {
+  const sections = document.querySelectorAll('.qualification__content');
 
+  sections.forEach(section => {
+    if (section.getAttribute('id') === sectionId) {
+      section.classList.add('qualification__active');
+    } else {
+      section.classList.remove('qualification__active');
+    }
+  });
+}
 
-/**/
+const tabs = document.querySelectorAll('.qualification__button');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const sectionId = tab.getAttribute('data-target');
+    showSection(sectionId);
+  });
+});
+
 
 /**/
 
