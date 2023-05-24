@@ -694,3 +694,60 @@ img {
   opacity: 1;
   visibility: visible; 
 }
+
+/* portfolio */
+.recent-works {
+  padding: 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.works-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+.work-item {
+  width: 300px;
+  margin: 10px;
+  /* border: 1px solid black; */
+  padding: 5rem;
+  border-radius: .5rem;
+  border-radius: .25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  transition: .3s;
+  background-color: var(--container-color);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+}
+
+.demo-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--first-color);
+  color: white;
+  text-decoration: none;
+  /* font-weight: bold; */
+  border-radius: .5rem;
+}
+
+@media (max-width: 768px) {
+  .work-item {
+    width: 100%;
+  }
+}
+
+.demo-button:hover {
+  background-color: var(--first-color-alt);
+}
+
+
+
