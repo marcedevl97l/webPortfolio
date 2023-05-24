@@ -92,16 +92,22 @@ modalCloses.forEach((modalClose) => {
   });
 });
 
-/*portfolio swiper*/
-var swiper = new Swiper(".mySwiper", {
+/*testimonial*/
+let swiperTestimonial = new Swiper('.testimonial__container', {
+  loop: true,
+  grabCursor: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });
 
-
-/**/
+  
 
 /**/
 
