@@ -64,7 +64,7 @@
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.5rem;
     --small-font-size: 0.875rem;
     --smaller-font-size: 0.813rem;
   }
@@ -300,9 +300,9 @@ img {
   fill: var(--first-color);
 }
 
-.home__blob-img {
-  /* width: 180px; */
-}
+/* .home__blob-img {
+  width: 180px;
+} */
 
 .home__data {
   grid-column: 1/3;
