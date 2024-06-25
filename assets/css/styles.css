@@ -506,6 +506,8 @@ img {
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  padding-top: 13px;
+  padding-right: 5rem;
 }
 
 .skills__bar,
@@ -579,6 +581,11 @@ img {
   transform: rotate(-180deg);
 }
 
+/* skills icons */
+.skills__data-img {
+  /* border: black 1px solid; */
+  width: 50px;
+}
 /* qualification */
 .qualification__tabs {
   display: flex;
