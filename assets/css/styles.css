@@ -1036,6 +1036,7 @@ img {
   .home__data {
     grid-column: initial;
     /* border: #FFF solid; */
+    /* work here now*/
   }
   .home__img {
     order: 1;
