@@ -7,6 +7,7 @@
 
   /* Background all page color */
   --hue-color: 230;
+  /* 230 valor original */
 
   /* color-selectors-HSL */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -768,9 +769,7 @@ img {
 .work-item {
   width: 300px;
   margin: 10px;
-  /* border: 1px solid black; */
-  padding: 5.5rem;
-  border-radius: 0.5rem;
+  padding: 4rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: 0.3s;
@@ -852,14 +851,14 @@ img {
 .testimonial__icon-star {
   color: var(--first-color);
 }
-.map__container iframe{
+.map__container iframe {
   border-radius: 10px;
 }
 
 .contact__container_elements {
   /* row-gap: 3rem; */
-  flex-direction: column; 
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 80%;
   height: 300px;
@@ -1013,7 +1012,7 @@ img {
   .map__container {
     display: none;
   }
-  .contact__information{
+  .contact__information {
     text-decoration: none;
   }
   .skills__title {
@@ -1021,6 +1020,12 @@ img {
   }
   .qualification__data {
     gap: 0.5rem;
+  }
+  #portfolio {
+    display: none;
+  }
+  .work-item {
+    display: none;
   }
   .services__container {
     grid-template-columns: max-content;
