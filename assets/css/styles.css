@@ -516,61 +516,16 @@ img {
   background-color: var(--first-color-lighter);
 }
 
-.skills__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-/* skills-bar-percentage 1 */
-.skills__html {
-  width: 90%;
-}
-.skills__css {
-  width: 90%;
-}
-.skills__js {
-  width: 90%;
-}
-.skills__react {
-  width: 90%;
-}
-
-/* skills-bar-percentage 2 */
-.skills__php {
-  width: 90%;
-}
-.skills__node {
-  width: 90%;
-}
-.skills__firebase {
-  width: 90%;
-}
-.skills__python {
-  width: 90%;
-}
-.skills__angular {
-  width: 90%;
-}
-
-/* skills-bar-percentage 3 */
-.skills__figma {
-  width: 90%;
-}
-.skills__sketch {
-  width: 90%;
-}
-.skills__photoshop {
-  width: 90%;
-}
-
 .skills__close .skills__list {
   height: 0;
   overflow: hidden;
+  transition: max-height 0.3s ease-out;
 }
 
 .skills__open .skills__list {
   height: max-content;
   margin-bottom: var(--mb-2-5);
+  transition: max-height 0.3s ease-out;
 }
 
 .skills__open .skills__arrow {
@@ -704,7 +659,7 @@ img {
   width: 300px;
   margin: 10px;
   /* border: 1px solid black; */
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 0.5rem;
   border-radius: 0.25rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
@@ -923,8 +878,8 @@ img {
 
 /* media-queries */
 
-/*for-small-devices*/
-@media screen and (max-width: 350px) {
+/*for-small-devices-phones*/
+@media screen and (max-width: 414px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
