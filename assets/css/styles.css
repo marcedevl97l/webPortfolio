@@ -351,6 +351,20 @@ img {
 }
 
 /* buttons */
+.btn-change {
+  margin: 5px;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.btn-change:hover {
+  background-color: #dfdfdf;
+}
+
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -742,14 +756,14 @@ img {
 .testimonial__icon-star {
   color: var(--first-color);
 }
-.map__container iframe{
+.map__container iframe {
   border-radius: 10px;
 }
 
 .contact__container_elements {
   /* row-gap: 3rem; */
-  flex-direction: column; 
-  justify-content: center; 
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 80%;
   height: 300px;
@@ -903,7 +917,7 @@ img {
   .map__container {
     display: none;
   }
-  .contact__information{
+  .contact__information {
     text-decoration: none;
   }
   .skills__title {

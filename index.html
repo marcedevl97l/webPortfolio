@@ -17,40 +17,40 @@
 </head>
 
 <body>
-  <!-- header -->
   <header class="header" id="header">
+    <!-- nav -->
     <nav class="nav container">
-      <a href="#" class="nav__logo">Marcelo</a>
+      <a href="#" class="nav__logo ">Marcelo</a>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list grid">
           <li class="nav__item">
-            <a href="#home" class="nav__link active-link">
-              <i class="uil uil-estate nav__icon"></i> Inicio
+            <a href="#home" class="nav__link active-link" data-translate="Inicio">
+              <i class="uil uil-estate nav__icon" ></i> Inicio
             </a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">
-              <i class="uil uil-user nav__icon"></i> Acerca de 
+            <a href="#about" class="nav__link" data-translate="Acerca de">
+              <i class="uil uil-user nav__icon "></i> Acerca de 
             </a>
           </li>
           <li class="nav__item">
-            <a href="#skills" class="nav__link">
+            <a href="#skills" class="nav__link" data-translate="Habilidades">
               <i class="uil uil-file-alt nav__icon"></i> Habilidades
             </a>
           </li>
           <li class="nav__item">
-            <a href="#services" class="nav__link">
+            <a href="#services" class="nav__link" data-translate="Servicios">
               <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
              </a>
           </li>
           <li class="nav__item">
-            <a href="#portfolio" class="nav__link">
+            <a href="#portfolio" class="nav__link" data-translate="Portafolio"> 
               <i class="uil uil-scenery nav__icon"></i> Portafolio
             </a>
           </li>
           <li class="nav__item">
-            <a href="#contact" class="nav__link">
+            <a href="#contact" class="nav__link" data-translate="Contacto">
               <i class="uil uil-message nav__icon"></i> Contacto
             </a>
           </li>
@@ -61,100 +61,77 @@
       <div class="nav__btns">
         <!-- Theme Change button -->
         <i class="uil uil-moon change-theme" id="theme-button"></i>
-
         <div class="nav__toggle" id="nav-toggle">
           <i class="uil uil-apps"></i>
         </div>
+        <!-- botones para cambiar de idioma -->
+        <button id="boton-ingles" class="btn-change">en</button>
+        <button id="btn-change boton-español" onclick="restaurarIdiomaOriginal()" class="btn-change">es</button>
       </div>
     </nav>
   </header>  
 
-  <!-- main -->
-<main class="main">
+  <!-- Home -->
+  <main class="main">
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+<div class="home__content grid">
+<div class="home__social">
 
-  <!-- home -->
-  <section class="home section" id="home">
-    <div class="home__container container grid">
-      <div class="home__content grid">
-        <div class="home__social">
+<!-- q1 -->
+<a href="https://www.linkedin.com/in/m1997/" target="_blank" class="home__social-icon">
+  <i class="uil uil-linkedin-alt"></i>
+</a>
 
-          <!-- q1 -->
-          <a href="https://www.linkedin.com/in/m1997/" target="_blank" class="home__social-icon">
-            <i class="uil uil-linkedin-alt"></i>
-          </a>
+<!-- q3 -->
+<a href="https://github.com/marcedevl97l" target="_blank" class="home__social-icon">
+  <i class="uil uil-github-alt"></i>
+</a>
+</div>
 
-          <!-- q2 -->
-          <!-- <a href="https://dribbble.com/" target="_blank" class="home__social-icon">
-            <i class="uil uil-dribbble"></i>
-          </a> -->
+<div class="home__img">
+  <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <mask id="mask0" mask-type="alpha">
+        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+    </mask>
+        <g mask="url(#mask0)">
+        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+        <image class="home__blob-img" x="12" y="-19" xlink:href="assets/img/perfil.png"/>
+        </g>
+  </svg>
+</div>
+</div>
 
-          <!-- q3 -->
-          <a href="https://github.com/marcedevl97l" target="_blank" class="home__social-icon">
-            <i class="uil uil-github-alt"></i>
-          </a>
-        </div>
-
-        <div class="home__img">
-          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <mask id="mask0" mask-type="alpha">
-                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-            </mask>
-            <g mask="url(#mask0)">
-                <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                <image class="home__blob-img" x="12" y="-19" xlink:href="assets/img/perfil.png"/>
-            </g>
-          </svg>
-        </div>
+<div class="home__data">
+<h1 class="home__title pb-3" data-translate="Hola, Soy Marcelo :D">Hola, Soy Marcelo :D</h1>
+<h3 class="home__subtitutle" data-translate="Programador FullStack Junior">Programador FullStack Junior</h3>
+<p class="home__description" data-translate="Soy un estudiante apasionado de desarrollo Full-Stack, enfocado en el desarrollo Frontend y en crear soluciones innovadoras.">Soy un estudiante apasionado de desarrollo Full-Stack, enfocado en el desarrollo Frontend y en crear soluciones innovadoras.</p>
+<a href="https://github.com/marcedevl97l" class="button button--flex  text-decoration-none" target="_blank" data-translate="Contacto">
+  Contacto<i class="uil uil-message button__icon"></i>
+</a>
+</div>
       </div>
-
-      <div class="home__data">
-        <h1 class="home__title pb-3">Hola, Soy Marcelo :D</h1>
-        <h3 class="home__subtitutle">Programador FullStack Junior</h3>
-        <p class="home__description">Soy un estudiante apasionado de <strong>desarrollo Full-Stack,</strong>enfocado en el desarrollo Frontend y en crear soluciones innovadoras.</p>
-        <a href="https://github.com/marcedevl97l" class="button button--flex  text-decoration-none" target="_blank">
-          Contactame<i class="uil uil-message button__icon"></i>
-        </a>
-      </div>
-    </div>
-
-    <div class="home__scroll">
-      <!-- <a href="#about" class="home__scroll-button button--flex">
+      <div class="home__scroll">
+        <!-- <a href="#about" class="home__scroll-button button--flex">
         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
         <span class="home__scroll-name">Scroll down</span>
         <i class="uil uil-arrow-down home__scroll-arrow"></i>
-      </a> -->
-    </div>
-  </div>
-  </section>
+        </a> -->
+      </div>
+    </section>
 
-  <!-- about -->
+    <!-- About -->
   <section class="about section" id="about">
-    <h2 class="section__title">Sobre mí</h2>
-    <span class="section__subtitle">Un poco sobre mí</span>
-  
+    <h2 class="section__title" data-translate="Sobre mí">Sobre mí</h2>
+    <span class="section__subtitle" data-translate="Un poco sobre mí">Un poco sobre mí</span>
     <div class="about__container container grid">
       <img src="/assets/img/aboutme.jpg" alt="" class="about__img">
   
       <div class="about__data">
-        <p class="about__description">Soy un apasionado del desarrollo full-stack, enfocado en crear soluciones innovadoras. Manejo diversas tecnologías y herramientas, lo que me permite abordar proyectos de manera integral. <strong>Siempre busco aprender nuevas habilidades y estoy abierto a nuevas tecnologías para dar lo mejor de mí en entornos colaborativos.</strong> </p>
+        <p class="about__description" data-translate="Soy un apasionado del desarrollo full-stack, enfocado en crear soluciones innovadoras. Manejo diversas tecnologías y herramientas, lo que me permite abordar proyectos de manera integral. Siempre busco aprender nuevas habilidades y estoy abierto a nuevas tecnologías para dar lo mejor de mí en entornos colaborativos.">Soy un apasionado del desarrollo full-stack, enfocado en crear soluciones innovadoras. Manejo diversas tecnologías y herramientas, lo que me permite abordar proyectos de manera integral. Siempre busco aprender nuevas habilidades y estoy abierto a nuevas tecnologías para dar lo mejor de mí en entornos colaborativos. </p>
   
-        <!-- <div class="about__info">
-          <span class="about__info-title">08+</span>
-          <span class="about__info-name">Years <br> experience</span>
-        </div>
-        <div class="about__info">
-          <span class="about__info-title">20+</span>
-          <span class="about__info-name">Completed <br> projects</span>
-        </div>
-        <div class="about__info">
-          <span class="about__info-title">05+</span>
-          <span class="about__info-name">Companies <br> worked</span>
-        </div> -->
-       
         <div class="about__buttons">
-        <a download="" href="/assets/pdf/Marcelo Sebastian Reyes Montenegro cv.pdf" class="button button--flex">
-          Descargar CV<i class="uil uil-download-alt button__icon"></i>
-        </a>
+          <a download="" href="/assets/pdf/Marcelo Sebastian Reyes Montenegro cv.pdf" class="button button--flex" data-translate="DescargarCV">Descargar CV<i class="uil uil-download-alt button__icon"></i></a>
         </div>
       </div>
     </div>
@@ -162,8 +139,8 @@
 
   <!-- skills -->
   <section class="skills section" id="skills">
-    <h2 class="section__title">Habilidades</h2>
-    <span class="section__subtitle">Mi nivel técnico</span>
+    <h2 class="section__title" data-translate="Habilidades">Habilidades</h2>
+    <span class="section__subtitle" data-translate="Mi nivel técnico">Mi nivel técnico</span>
 
     <div class="skills__container container grid">
         <!-- skills database 1 -->
@@ -174,18 +151,18 @@
 
             <div>
               <h1 class="skills__title">FrontEnd Developer</h1>
-              <span class="skills__subtitle">1 Año de Experiencia</span>
+              <span class="skills__subtitle" data-translate="1 Año de Experiencia">1 Año de Experiencia</span>
             </div>
 
             <i class="uil uil-angle-down skills__arrow"></i>
-          </div>
+            </div>
 
-          <!-- skills-list -->
-          <div class="skills__list grid">
+            <!-- skills-list -->
+            <div class="skills__list grid">
 
-            <!-- skill 1-->
-            <div class="skills__data">
-              <div class="skills__titles">
+              <!-- skill 1-->
+              <div class="skills__data">
+                <div class="skills__titles">
                 <h3 class="skills__name">HTML and CSS3
                 </h3>
                 <img src="/assets/img/icons8-html-48.png" alt="htmlpng" class="skills__data-img">
@@ -223,12 +200,10 @@
         <div class="skills__content skills__close">
           <div class="skills__header">
             <i class="uil uil-server-network skills__icon"></i>
-
             <div>
               <h1 class="skills__title">BackEnd Developer</h1>
-              <span class="skills__subtitle">1 Año de Experiencia</span>
+              <span class="skills__subtitle" data-translate="1 Año de Experiencia">1 Año de Experiencia</span>
             </div>
-
             <i class="uil uil-angle-down skills__arrow"></i>
           </div>
 
@@ -277,7 +252,7 @@
 
             <div>
               <h1 class="skills__title">Designer and NoCode Tools</h1>
-              <span class="skills__subtitle">1 Año de Experiencia</span>
+              <span class="skills__subtitle" data-translate="1 Año de Experiencia">1 Año de Experiencia</span>
             </div>
 
             <i class="uil uil-angle-down skills__arrow"></i>
@@ -322,7 +297,7 @@
 
             <div>
               <h1 class="skills__title">Cloud Tools</h1>
-              <span class="skills__subtitle">Estudiando</span>
+              <span class="skills__subtitle" data-translate="Estudiando">Estudiando</span>
             </div>
 
             <i class="uil uil-angle-down skills__arrow"></i>
@@ -347,20 +322,20 @@
 
   <!-- qualification -->
    <section class="section" id="qualification">
-    <h2 class="section__title">Calificación</h2>
-    <span class="section__subtitle">Educación y Certificaciones</span>
+    <h2 class="section__title" data-translate="Calificación">Calificación</h2>
+    <span class="section__subtitle" data-translate="Educación y Certificaciones">Educación y Certificaciones</span>
 
     <div class="container grid">
       <div class="qualification__content services__content container grid" style="padding: 2rem;">
-        <h1>Ingeniera de Desarrollo de Software</h1>
-        <h4>Universidad Tecnologica del Perú</h4>
+        <h1 data-translate="Ingeniera de Desarrollo de Software">Ingeniera de Desarrollo de Software</h1>
+        <h4 data-translate="Universidad Tecnologica del Perú">Universidad Tecnologica del Perú</h4>
         <p>2021 - 2023 Estudios truncos</p>
         <br>
-        <h1>Redes y Seguridad Informática</h1>
-        <h4>Instituto Tecnológico Superior SISE</h4>
+        <h1 data-translate="Redes y Seguridad Informática">Redes y Seguridad Informática</h1>
+        <h4 data-translate="Instituto Tecnológico Superior SISE">Instituto Tecnológico Superior SISE</h4>
         <p>2023 - Actualidad</p>
         <br>
-        <h1>Desarrollo de Software</h1>
+        <h1 data-translate="Software Development">Desarrollo de Software</h1>
         <h4>Platzi</h4>
         <p>2023 - Actualidad</p>
       </div>
@@ -369,8 +344,8 @@
    </section>
   <!-- services -->
   <section class="services section" id="services">
-    <h2 class="section__title">Servicios</h2>
-    <span class="section__subtitle">Lo que ofrezco</span>
+    <h2 class="section__title" data-translate="Servicios">Servicios</h2>
+    <span class="section__subtitle" data-translate="Lo que ofrezco">Lo que ofrezco</span>
 
     <div class="services__container container grid">
       <!-- services 1 -->
@@ -380,7 +355,7 @@
           <h3 class="services__title">FrontEnd <br> Developer</h3>
         </div>
 
-        <span class="button button--flex button--small button--link services__button">
+        <span class="button button--flex button--small button--link services__button" data-translate="Ver más">
           Ver más
           <i class="uil uil-arrow-right button__icon"></i>
         </span>
@@ -393,19 +368,19 @@
             <ul class="services__modal-services grid">
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
-                <p>Desarrollo de paginas web responsive</p>
+                <p data-translate="Desarrollo de paginas web responsive">Desarrollo de paginas web responsive</p>
               </li>
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
-                <p>Optimización del Rendimiento de Páginas Web</p>
+                <p data-translate="Optimización del Rendimiento de Páginas Web">Optimización del Rendimiento de Páginas Web</p>
               </li>
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
-                <p>Integración de APIs</p>
+                <p data-translate="Integración de APIs">Integración de APIs</p>
               </li>
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
-                <p>Pocisionamiento de la compañia</p>
+                <p data-translate="Pocisionamiento de la compañia">Pocisionamiento de la compañia</p>
               </li>
             </ul>
           </div>
@@ -419,7 +394,7 @@
           <h3 class="services__title">BackEnd<br> Designer</h3>
         </div>
 
-        <span class="button button--flex button--small button--link services__button">
+        <span class="button button--flex button--small button--link services__button" data-translate="Ver más">
           Ver más
           <i class="uil uil-arrow-right button__icon"></i>
         </span>
@@ -432,7 +407,7 @@
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
                 <br>
-                <p>Desarrollo de interfaces de usuario</p>
+                <p data-translate="Desarrollo de interfaces de usuario">Desarrollo de interfaces de usuario</p>
               </li>
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
@@ -449,166 +424,63 @@
 
   <!-- portfolio -->
   <section class="portfolio section" id="portfolio">
-    <h2 class="section__title">Portafolio</h2>
-    <span class="section__subtitle">Mis Trabajos mas Recientes</span>
+    <h2 class="section__title" data-translate="Portafolio">Portafolio</h2>
+    <span class="section__subtitle" data-translate="Mis Trabajos mas Recientes">Mis Trabajos mas Recientes</span>
     <div class="works-container">
     <!-- project 1 -->
       <div class="work-item">
         <h1>Landing Page</h1>
-        <p style="padding: 20px 0 20px;">Proyecto enfocado en el rubro Inmobiliario</p>
+        <p style="padding: 20px 0 20px;" data-translate="Proyecto enfocado en el rubro Inmobiliario">Proyecto enfocado en el rubro Inmobiliario</p>
         <ul style="padding-bottom: 20px;">
           <li>- HTML CSS3</li>
           <li>- Bootstrap</li>
           <li>- JavaScript</li>
           <li>- Netlify</li>
         </ul>
-        <a href="https://landingpagesellinghouseswithbootsrap.netlify.app" target="_blank"><span class="button button--flex button--small button--link services__button">
+        <a href="https://landingpagesellinghouseswithbootsrap.netlify.app" target="_blank"><span class="button button--flex button--small button--link services__button" data-translate="Visitar Demo">
           Visitar Demo
           <i class="uil uil-arrow-right button__icon"></i>
         </span></a>
-        <a href="https://github.com/marcedevl97l/Bootsrap-Landing-Page-Houses" target="_blank"><span class="button button--flex button--small button--link services__button">
+        <a href="https://github.com/marcedevl97l/Bootsrap-Landing-Page-Houses" target="_blank"><span class="button button--flex button--small button--link services__button" data-translate="Ver Código Fuente">
           Ver Código Fuente
           <i class="uil uil-arrow-right button__icon"></i>
         </span></a>
       </div>
     <!-- project 2 -->
     <div class="work-item">
-      <h1>Proyectos varios con HTML CSS</h1>
-      <p style="padding: 20px 0 20px;">Variedad de Proyectos como Navbars y Páginas web estáticas</p>
+      <h1 data-translate="Proyectos varios con HTML CSS">Proyectos varios con HTML CSS</h1>
+      <p style="padding: 20px 0 20px;" data-translate="Variedad de Proyectos como Navbars y Páginas web estáticas">Variedad de Proyectos como Navbars y Páginas web estáticas</p>
       <ul style="padding-bottom: 20px;">
         <li>- HTML CSS3</li>
         <li>- JavaScript</li>
       </ul>
-      <a href="https://github.com/marcedevl97l/HTML-CSS-JavaScript" target="_blank"><span class="button button--flex button--small button--link services__button">
+      <a href="https://github.com/marcedevl97l/HTML-CSS-JavaScript" target="_blank"><span class="button button--flex button--small button--link services__button" data-translate="Ver Código Fuente">
         Ver Código Fuente
         <i class="uil uil-arrow-right button__icon"></i>
       </span></a>
     </div>
     <!-- project 3 -->
     <div class="work-item">
-      <h1>Proyecto Ingresos y Gastos <br>En desarrollo ⌛</h1>
-      <p style="padding: 20px 0 20px;">Aplicacion FrontEnd Desarrollada en React con Vite</p>
+      <h1 data-translate="Proyecto Ingresos y Gastos En desarrollo ⌛">Proyecto Ingresos y Gastos <br>En desarrollo ⌛</h1>
+      <p style="padding: 20px 0 20px;" data-translate="Aplicacion FrontEnd Desarrollada en React con Vite">Aplicacion FrontEnd Desarrollada en React con Vite</p>
       <ul style="padding-bottom: 20px;">
         <li>- HTML CSS3</li>
         <li>- JavaScript</li>
         <li>- React</li>
         <li>- Vite</li>
       </ul>
-      <a href="https://github.com/marcedevl97l/frontendReactApp" target="_blank"><span class="button button--flex button--small button--link services__button">
+      <a href="https://github.com/marcedevl97l/frontendReactApp" target="_blank"><span class="button button--flex button--small button--link services__button" data-translate="Ver Código Fuente">
         Ver Código Fuente
         <i class="uil uil-arrow-right button__icon"></i>
       </span></a>
     </div>
     <!-- project 4 -->
-    
-
 
     </div>
   </section>
-
-  <!-- project-in-mind -->
-  <!-- <section class="project section">
-    <div class="project__bg">
-      <div class="project__container container grid">
-        <div class="project__data">
-          <h2 class="project__title">You have a new project</h2>
-          <p class="project__description">Contact me now and get a 30% discount</p>
-          <a href="#contact" class="button button--flex button--white">
-          Contact Me 
-            <i class="uil uil-message project__icon button__icon"></i>
-          </a>
-        </div>
-
-        <img src="" alt="" class="project__img">
-
-      </div>
-    </div>
-  </section> -->
-
-  <!-- <section class="testimonial section">
-    <h2 class="section__title">Testimonial</h2>
-    <span class="section__subtitle">My client saying</span>
-
-    <div class="testimonial__container container swiper mySwiper">
-      <div class="swiper-wrapper">
-
-        <div class="testimonial__content swiper-slide">
-          <div class="testimonial__data">
-            <div class="testimonial__header">
-              <img src="" alt="" class="testimonial__img">
-              
-              <div>
-                <h3 class="testimonial__name">Sra Smith</h3>
-                <span class="testimonial__client">Client</span>
-              </div>
-            </div>
-
-            <div>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-            </div>
-          </div>
-
-          <p class="testimonial__description">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day</p>
-        </div>
-
-        <div class="testimonial__content swiper-slide">
-          <div class="testimonial__data">
-            <div class="testimonial__header">
-              <img src="" alt="" class="testimonial__img">
-              
-              <div>
-                <h3 class="testimonial__name">Sra Smith</h3>
-                <span class="testimonial__client">Client</span>
-              </div>
-            </div>
-
-            <div>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-            </div>
-          </div>
-
-          <p class="testimonial__description">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day</p>
-        </div>
-
-        <div class="testimonial__content swiper-slide">
-          <div class="testimonial__data">
-            <div class="testimonial__header">
-              <img src="" alt="" class="testimonial__img">
-              
-              <div>
-                <h3 class="testimonial__name">Sra Smith</h3>
-                <span class="testimonial__client">Client</span>
-              </div>
-            </div>
-
-            <div>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-              <i class="uil uil-star testimonial__icon-star"></i>
-            </div>
-          </div>
-
-          <p class="testimonial__description">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day</p>
-        </div>
-      </div>
-
-      <div class="swiper-pagination swiper-pagination-tesitmonial"></div>
-    </div>
-  </section> -->
-
   <!-- contact-me -->
   <section class="container section" id="contact">
-    <h2 class="section__title">Contacto</h2>
+    <h2 class="section__title" data-translate="Contacto">Contacto</h2>
     <span class="section__subtitle">24/7</span>
     <div class="contact__container container grid">
       <div class="contact__container_elements">
@@ -653,13 +525,13 @@
 
         <ul class="footer__links">
           <li>
-            <a href="#services" class="footer__link">Servicios</a>
+            <a href="#services" class="footer__link" data-translate="Servicios">Servicios</a>
           </li>
           <li>
-            <a href="#portfolio" class="footer__link">Portfolio</a>
+            <a href="#portfolio" class="footer__link" data-translate="Portafolio">Portfolio</a>
           </li>
           <li>
-            <a href="#contact" class="footer__link">Contactame</a>
+            <a href="#contact" class="footer__link" data-translate="Contactame">Contactame</a>
           </li>
         </ul>
 
@@ -694,8 +566,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <!-- main-js -->
   <script src="/assets/js/main.js"></script>
-  <!-- Bootstrap Scripts and deployment ApIs -->
-
-
+  <!-- script para actualizar el idioma-->
+   <script src="/assets/js/change-en.js"></script>
+    <script src="/assets/js/change-es.js"></script>
 </body>
 </html>
