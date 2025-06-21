@@ -199,15 +199,16 @@ const certifications = {
   cert1: {
     title: "Recursos Linux",
     description:
-      "Administracion de servidores manejo de recursos y configuracion de servicios",
-    image: "/assets/img/Administracion de servidores manejo de recursos_page-0001.jpg",
-    downloadLink: "/assets/Administracion de servidores manejo de recursos.pdf",
+      "Administración de servidores manejo de recursos y configuración de servicios",
+    image:
+      "/assets/img/Administracion de servidores manejo de recursos_page-0001.jpg",
+    downloadLink: "/assets/pdf/Administracion de servidores manejo de recursos.pdf",
   },
   cert2: {
     title: "Networking Essentials",
     description: "Certificación en Networking Essentials",
     image: "/assets/img/Networking Essentials_page-0001.jpg",
-    downloadLink: "/assets/pdfs/networking-essentials-cert.pdf",
+    downloadLink: "/assets/pdf/Networking Essentials.pdf",
   },
   cert3: {
     title: "AWS Cloud Practitioner",
