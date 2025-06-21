@@ -1166,3 +1166,219 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Nueva area de certificaciones */
+.certifications {
+  background-color: var(--container-color);
+}
+
+.certifications__container {
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.certification__card {
+  background-color: var(--body-color);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 25px hsla(var(--hue), var(--sat), 15%, 0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.certification__card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 8px 40px hsla(var(--hue), var(--sat), 15%, 0.2);
+}
+
+.certification__img {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  height: 200px;
+}
+
+.certification__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.certification__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, hsla(var(--hue), var(--sat), 4%, 0) 0%, hsla(var(--hue), var(--sat), 4%, 0.8) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.certification__card:hover .certification__overlay {
+  opacity: 1;
+}
+
+.certification__card:hover .certification__image {
+  transform: scale(1.1);
+}
+
+.certification__button {
+  background: var(--first-color);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: var(--font-medium);
+  transition: background-color 0.3s;
+}
+
+.certification__button:hover {
+  background: var(--first-color-alt);
+}
+
+.certification__content {
+  text-align: center;
+}
+
+.certification__title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: 0.5rem;
+  color: var(--title-color);
+}
+
+.certification__description {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.certification__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.certification__institution {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+}
+
+.certification__date {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+/* Modal de certificados */
+.cert__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: var(--z-modal);
+  padding: 2rem;
+}
+
+.cert__modal.show {
+  display: flex;
+}
+
+.cert__modal-content {
+  background: var(--body-color);
+  border-radius: 1rem;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.cert__modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.cert__modal-close:hover {
+  color: var(--first-color);
+}
+
+.cert__modal-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cert__modal-info {
+  text-align: center;
+}
+
+.cert__modal-info h3 {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+
+.cert__modal-info p {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.cert__modal-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .certifications__container {
+    grid-template-columns: 1fr;
+  }
+  
+  .cert__modal-content {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .cert__modal-image {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .certification__card {
+    padding: 1rem;
+  }
+  
+  .certification__img {
+    height: 150px;
+  }
+}

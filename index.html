@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='es'>
+<html lang='en'>
 <head>
   <meta charset='UTF-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -103,8 +103,8 @@
 </div>
 
 <div class="home__data">
-<h1 class="home__title pb-3" data-translate="Hola, Soy Marcelo :D">Hola, Soy Marcelo :D</h1>
-<h3 class="home__subtitutle" data-translate="Programador FullStack Junior">Programador FullStack Junior</h3>
+<h1 class="home__title pb-3" data-translate="Hola, Soy Marcelo :D">Hola, Soy Marcelo</h1>
+<h3 class="home__subtitutle" data-translate="Programador FullStack Junior">Administrador de Bases de Datos</h3>
 <p class="home__description" data-translate="Soy un estudiante apasionado de desarrollo Full-Stack, enfocado en el desarrollo Frontend y en crear soluciones innovadoras.">Soy un estudiante apasionado de desarrollo Full-Stack, enfocado en el desarrollo Frontend y en crear soluciones innovadoras.</p>
 <a href="https://github.com/marcedevl97l" class="button button--flex  text-decoration-none" target="_blank" data-translate="Contacto">
   Contacto<i class="uil uil-message button__icon"></i>
@@ -131,7 +131,7 @@
         <p class="about__description" data-translate="Soy un apasionado del desarrollo full-stack, enfocado en crear soluciones innovadoras. Manejo diversas tecnologías y herramientas, lo que me permite abordar proyectos de manera integral. Siempre busco aprender nuevas habilidades y estoy abierto a nuevas tecnologías para dar lo mejor de mí en entornos colaborativos.">Soy un apasionado del desarrollo full-stack, enfocado en crear soluciones innovadoras. Manejo diversas tecnologías y herramientas, lo que me permite abordar proyectos de manera integral. Siempre busco aprender nuevas habilidades y estoy abierto a nuevas tecnologías para dar lo mejor de mí en entornos colaborativos. </p>
   
         <div class="about__buttons">
-          <a download="" href="/assets/pdf/Marcelo Sebastian Reyes Montenegro cv.pdf" class="button button--flex" data-translate="DescargarCV">Descargar CV<i class="uil uil-download-alt button__icon"></i></a>
+          <a download="" href="/assets/pdf/Marcelo Sebastian Reyes Montenegro actualizado.pdf" class="button button--flex" data-translate="DescargarCV">Descargar CV<i class="uil uil-download-alt button__icon"></i></a>
         </div>
       </div>
     </div>
@@ -187,13 +187,6 @@
             </div>
 
             <!-- skill 4 -->
-            <div class="skills__data">
-              <div class="skills__titles">
-                <h3 class="skills__name">React
-                </h3>
-                <img src="/assets/img/icons8-react-40.png" alt="htmlpng" class="skills__data-img">
-              </div>
-            </div>
           </div>
         </div>
 
@@ -342,6 +335,97 @@
     </div>
     
    </section>
+
+     <!-- Certifications -->
+<section class="certifications section" id="certifications">
+  <h2 class="section__title" data-translate="Certificaciones">Certificaciones</h2>
+  <span class="section__subtitle" data-translate="Mis Logros y Reconocimientos">Mis Logros y Reconocimientos</span>
+  
+  <div class="certifications__container container grid">
+    <!-- Certificación 1 -->
+    <div class="certification__card">
+      <div class="certification__img">
+        <img src="/assets/img/Administracion de servidores manejo de recursos_page-0001.jpg" alt="Manejo de Recursos" class="certification__image">
+        <div class="certification__overlay">
+          <button class="certification__button" onclick="openCertModal('cert1')">
+            <i class="uil uil-eye"></i>
+            <span data-translate="Ver Certificado">Ver Certificado</span>
+          </button>
+        </div>
+      </div>
+      <div class="certification__content">
+        <h3 class="certification__title" data-translate="JavaScript Fundamentals">Recursos Linux</h3>
+        <p class="certification__description" data-translate="Certificación en fundamentos de JavaScript">Certificación en Administración de Servidores </p>
+        <div class="certification__info">
+          <span class="certification__institution">Platzi</span>
+          <span class="certification__date">2025</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificación 2 -->
+    <div class="certification__card">
+      <div class="certification__img">
+        <img src="/assets/img/Networking Essentials_page-0001.jpg" alt="Certificación React" class="certification__image">
+        <div class="certification__overlay">
+          <button class="certification__button" onclick="openCertModal('cert2')">
+            <i class="uil uil-eye"></i>
+            <span data-translate="Ver Certificado">Ver Certificado</span>
+          </button>
+        </div>
+      </div>
+      <div class="certification__content">
+        <h3 class="certification__title" data-translate="Networking Essentials">Networking Essentials</h3>
+        <p class="certification__description" data-translate="Desarrollo de aplicaciones con React">PacketTracer</p>
+        <div class="certification__info">
+          <span class="certification__institution">CISCO</span>
+          <span class="certification__date">2025</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="certification__card">
+      <div class="certification__img">
+        <img src="/assets/img/cert-placeholder.jpg" alt="Certificación AWS" class="certification__image">
+        <div class="certification__overlay">
+          <button class="certification__button" onclick="openCertModal('cert3')">
+            <i class="uil uil-eye"></i>
+            <span data-translate="Ver Certificado">Ver Certificado</span>
+          </button>
+        </div>
+      </div>
+      <div class="certification__content">
+        <h3 class="certification__title" data-translate="AWS Cloud Practitioner">AWS Cloud Practitioner</h3>
+        <p class="certification__description" data-translate="Fundamentos de computación en la nube">Fundamentos de computación en la nube</p>
+        <div class="certification__info">
+          <span class="certification__institution">Amazon Web Services</span>
+          <span class="certification__date">2024</span>
+        </div>
+      </div>
+    </div>
+    <div class="certification__card">
+      <div class="certification__img">
+        <img src="/assets/img/cert-placeholder.jpg" alt="Certificación Frontend" class="certification__image">
+        <div class="certification__overlay">
+          <button class="certification__button" onclick="openCertModal('cert4')">
+            <i class="uil uil-eye"></i>
+            <span data-translate="Ver Certificado">Ver Certificado</span>
+          </button>
+        </div>
+      </div>
+      <div class="certification__content">
+        <h3 class="certification__title" data-translate="Frontend Developer">Frontend Developer</h3>
+        <p class="certification__description" data-translate="Desarrollo Frontend con HTML, CSS y JavaScript">Desarrollo Frontend con HTML, CSS y JavaScript</p>
+        <div class="certification__info">
+          <span class="certification__institution">Platzi</span>
+          <span class="certification__date">2023</span>
+        </div>
+      </div>
+    </div> -->
+
+  </div>
+</section>
+
   <!-- services -->
   <section class="services section" id="services">
     <h2 class="section__title" data-translate="Servicios">Servicios</h2>
@@ -368,7 +452,7 @@
             <ul class="services__modal-services grid">
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
-                <p data-translate="Desarrollo de paginas web responsive">Desarrollo de paginas web responsive</p>
+                <p data-translate="Desarrollo de paginas web responsive"> Desarrollo de paginas web responsive</p>
               </li>
               <li class="services__modal-service">
                 <il class="uil uil-check-circle service__modal-icon"></il>
@@ -478,6 +562,7 @@
 
     </div>
   </section>
+
   <!-- contact-me -->
   <section class="container section" id="contact">
     <h2 class="section__title" data-translate="Contacto">Contacto</h2>
@@ -489,7 +574,7 @@
         <div class="contact__information">
             <div style="display: flex;">
             <h3 class="contact__title" style="margin-right: 1rem; padding-top: 5px;">Whatsapp</h3>
-            <button;><a href="https://wa.me/51917205538" class="demo-button" target="_blank"><i class="uil uil-whatsapp project__icon button__icon" style="margin: -10px;"></i></a></button>
+            <button;><a href="https://wa.me/51998818170" class="demo-button" target="_blank"><i class="uil uil-whatsapp project__icon button__icon" style="margin: -10px;"></i></a></button>
           </div>
         </div>
         <!-- contact 2 -->
@@ -553,6 +638,26 @@
       <p class="footer__copy">&#169; "marcedevl97l". Todos los derechos reservados 2024</p>
     </div>
   </footer>
+
+
+
+<!-- Modal para ver certificados -->
+<div class="cert__modal" id="certModal">
+  <div class="cert__modal-content">
+    <span class="cert__modal-close" onclick="closeCertModal()">&times;</span>
+    <img src="" alt="Certificado" id="certModalImage" class="cert__modal-image">
+    <div class="cert__modal-info">
+      <h3 id="certModalTitle"></h3>
+      <p id="certModalDescription"></p>
+      <div class="cert__modal-actions">
+        <a href="#" id="certDownloadLink" class="button button--flex" download>
+          <i class="uil uil-download-alt button__icon"></i>
+          <span data-translate="Descargar">Descargar</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- scroll-top -->
   <a href="#" class="scroll-up" id="scroll-up">
